@@ -18,9 +18,9 @@ In this tutorial, we observe how to install Windows Updates in Server Manager. <
 <h2>High-Level Steps</h2>
 
 - Step 1: Remotely Login to Virtual Machine
-- Step 2: 
-- Step 3
-- Step 4
+- Step 2: Direct DNS Server to Domain Controller
+- Step 3: Configure Windows Server Updates Services in Server Manager
+- Step 4: Approve All Updates in Update Services
 
 <h2>Actions and Observations</h2>
 

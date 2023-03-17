@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://imgur.com/zIJZKfA.png" alt="Windows Server"/>
+<img src="https://imgur.com/miSFMq7.png" alt="Windows Server"/>
 </p>
 
 <h1>Windows Server Updates</h1>

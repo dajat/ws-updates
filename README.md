@@ -1,9 +1,9 @@
 <p align="center">
-<img src="https://imgur.com/miSFMq7.png" alt="Windows Server"/>
+<img src="https://imgur.com/RfN1vvw.png" alt="Windows Server"/>
 </p>
 
 <h1>Windows Server Updates</h1>
-In this tutorial, we observe how to install Windows Server Updates in Server Manager. This tutorial is an excellent way on exploring Active Directory and understanding how Windows Updates are to computers and why users have scheduled updates to protect their information. <br />
+In this tutorial, we observe how to install Windows Server Updates in Server Manager. This tutorial is an excellent way on exploring Active Directory and understanding how and why Windows Updates are important to users to have scheduled updates to protect their information. <br />
 
 <h2>Environments and Technologies Used</h2>
 

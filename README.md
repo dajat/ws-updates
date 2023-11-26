@@ -3,7 +3,7 @@
 </p>
 
 <h1>Windows Server Updates</h1>
-In this tutorial, we observe how to install Windows Server Updates in Server Manager. This tutorial is an excellent way on exploring Active Directory and understanding how and why Windows Updates are important to users to have scheduled updates to protect their information. <br />
+In this tutorial, we observe how to install Windows Server Updates in Server Manager. This tutorial is an excellent way to explore Active Directory and understand how and why Windows Updates are important to users to have scheduled updates to protect their information. <br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -30,7 +30,7 @@ In this tutorial, we observe how to install Windows Server Updates in Server Man
 <img src="https://imgur.com/NfsAACS.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Assuming that we are manually setting up a new computer, navigate to updates and security to check for updates under Settings. If you receive an "Error Encountered" message it means that their is no DHCP Server and will need to add a static IP address
+Assuming that we are manually setting up a new computer, navigate to updates and security to check for updates under Settings. If you receive an "Error Encountered" message it means that there is no DHCP Server and will need to add a static IP address
 </p>
 <br />
 <h2>Navigate to Network and Security (cont.)</h2>
@@ -38,7 +38,7 @@ Assuming that we are manually setting up a new computer, navigate to updates and
 <img src="https://imgur.com/vwdPYL8.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next, navigate to Network and Internet --> "Network and Sharing Center" --> Select "Change Adapter Settings" --> Click on "Turn on or off Windows Settings" --> right click on Ethernet and select "Properties". Next, select IPv4 to direct the DNS Server back to itself, the set IP for the domain controller (computer with Active Directory installed on the virtual machine).
+Next, navigate to Network and Internet --> "Network and Sharing Center" --> Select "Change Adapter Settings" --> Click on "Turn on or off Windows Settings" --> right-click on Ethernet and select "Properties". Next, select IPv4 to direct the DNS Server back to itself, the set IP for the domain controller (computer with Active Directory installed on the virtual machine).
 </p>
 <br />
 <h2>Configure and Add Windows Server Update Services in Server Manager</h2>
@@ -46,7 +46,7 @@ Next, navigate to Network and Internet --> "Network and Sharing Center" --> Sele
 <img src="https://imgur.com/cBNWihb.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Nect, open Server Manager and select "Add roles and features". Under Server Roles, select "Windows Server Update Services" and continue steps for the configuration wizard. In the configuration wizard, you will have different features that can be added or removed such as adding a SQL database and where to place installation files. After clicking through the next few slides, click on Install.
+Next, open Server Manager and select "Add roles and features". Under Server Roles, select "Windows Server Update Services" and continue the steps for the configuration wizard. In the configuration wizard, you will have different features that can be added or removed such as adding a SQL database and where to place installation files. After clicking through the next few slides, click on Install.
 </p>
 <br />
 <h2>Windows Server Configuration Wizard</h2>
@@ -62,7 +62,7 @@ Once installed, click on the Notifications Flag in Server Manager and select "La
 <img src="https://imgur.com/j3UYBru.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-You'll have the option to synchronize (or download) from another windows server update service server, if you have one available. In this case, we can choose, synchronize from microsoft update. Click next on the next few selects and choose configurations as needed.
+You'll have the option to synchronize (or download) from another Windows server update if you have one available. In this case, we can choose and synchronize from Microsoft update. Click next on the next few selects and choose configurations as needed.
 </p>
 <br />
 <h2>Windows Server Configuration Wizard (cont.)</h2>
@@ -70,7 +70,7 @@ You'll have the option to synchronize (or download) from another windows server 
 <img src="https://imgur.com/QJzCb2c.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Select Start Connecting and choose the appropiate language. The more languages that are chosen, the more storage space that is required. Please note that this can take at least 30 minutes to complete.
+Select Start Connecting and choose the appropriate language. The more languages that are chosen, the more storage space that is required. Please note that this can take at least 30 minutes to complete.
 </p>
 <br />
 <h2>Windows Server Configuration Wizard (cont.)</h2>
@@ -86,7 +86,7 @@ Under Products, choose the products that are required. You can see by default th
 <img src="https://imgur.com/4VUAXv6.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Under Classifications, Critical, Definition, and Security updates are automatically installed for antimalware. For demo purposes, we can just choose "critical updates". Next, we can choose to manually or automatically snychronize and the updates will be sent to the updates folder that was created earlier.
+Under Classifications, Critical, Definition and Security updates are automatically installed for antimalware. For demo purposes, we can just choose "critical updates". Next, we can choose to manually or automatically synchronize and the updates will be sent to the updates folder that was created earlier.
 </p>
 <br />
 <h2>Update Services</h2>
@@ -94,7 +94,7 @@ Under Classifications, Critical, Definition, and Security updates are automatica
 <img src="https://imgur.com/qxCe9Bu.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Expand Server Updates and select All Updates and choose any for approval and status. (Setup group poilcy to all clients on where to look for updates, create specific groups for all unassigned computers and have specific groups).
+Expand Server Updates, select All Updates, and choose any for approval and status. (Set up a group policy for all clients on where to look for updates, create specific groups for all unassigned computer, and have specific groups).
 </p>
 <br />
 <h2>Update Services (cont.)</h2>

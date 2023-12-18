@@ -3,7 +3,7 @@
 </p>
 
 <h1>Windows Server Updates</h1>
-In this tutorial, we observe how to install Windows Server Updates in Server Manager. This tutorial is an excellent way to explore Active Directory and understand how and why Windows Updates are important to users to have scheduled updates to protect their information. <br />
+In this tutorial, we observe how to install Windows Server Updates in Server Manager. This tutorial is an excellent way to explore Active Directory and understand why Windows Updates are important and to have scheduled updates to protect their information. <br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -30,7 +30,7 @@ In this tutorial, we observe how to install Windows Server Updates in Server Man
 <img src="https://imgur.com/NfsAACS.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Assuming that we are manually setting up a new computer, navigate to updates and security to check for updates under Settings. If you receive an "Error Encountered" message it means that there is no DHCP Server and will need to add a static IP address
+Assuming that we are manually setting up a new computer, navigate to updates and security to check for updates under Settings. If you receive an "Error Encountered" message, it means that there is no DHCP Server and will need to add a static IP address
 </p>
 <br />
 <h2>Navigate to Network and Security (cont.)</h2>
@@ -38,7 +38,7 @@ Assuming that we are manually setting up a new computer, navigate to updates and
 <img src="https://imgur.com/vwdPYL8.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next, navigate to Network and Internet --> "Network and Sharing Center" --> Select "Change Adapter Settings" --> Click on "Turn on or off Windows Settings" --> right-click on Ethernet and select "Properties". Next, select IPv4 to direct the DNS Server back to itself, the set IP for the domain controller (computer with Active Directory installed on the virtual machine).
+Next, navigate to Network and Internet --> "Network and Sharing Center" --> Select "Change Adapter Settings" --> Click on "Turn on or off Windows Settings" --> Right-click on Ethernet and select "Properties". Next, select IPv4 to direct the DNS Server back to itself, the set IP for the domain controller (computer with Active Directory installed on the virtual machine).
 </p>
 <br />
 <h2>Configure and Add Windows Server Update Services in Server Manager</h2>
@@ -86,7 +86,7 @@ Under Products, choose the products that are required. You can see by default th
 <img src="https://imgur.com/4VUAXv6.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Under Classifications, Critical, Definition and Security updates are automatically installed for antimalware. For demo purposes, we can just choose "critical updates". Next, we can choose to manually or automatically synchronize and the updates will be sent to the updates folder that was created earlier.
+Under Classifications, Critical, Definition, and Security updates are automatically installed for antimalware. For demo purposes, we can just choose "critical updates". Next, we can choose to manually or automatically synchronize and the updates will be sent to the updates folder that was created earlier.
 </p>
 <br />
 <h2>Update Services</h2>
@@ -94,7 +94,7 @@ Under Classifications, Critical, Definition and Security updates are automatical
 <img src="https://imgur.com/qxCe9Bu.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Expand Server Updates, select All Updates, and choose any for approval and status. (Set up a group policy for all clients on where to look for updates, create specific groups for all unassigned computer, and have specific groups).
+Expand Server Updates, select All Updates, and choose any for approval and status. (Set up a group policy for all clients on where to look for updates, and create specific groups for all unassigned computers, and have specific groups).
 </p>
 <br />
 <h2>Update Services (cont.)</h2>
@@ -102,6 +102,6 @@ Expand Server Updates, select All Updates, and choose any for approval and statu
 <img src="https://imgur.com/wOoiVT4.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next, you can explore the different options and features in the "Update Services" In this demo, we can take a look at "Options" - go to products and classifications to add additional operating systems and apps that you may have missed, in case things change.
+Next, you can explore the different options and features in the "Update Services" In this demo, we can take a look at "Options" by navigating 'Products and Classifications' to add additional operating systems and apps that you may have missed, in case of any changes.
 </p>
 <br />
